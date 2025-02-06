@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CecarChifferApi", "CecarChifferApi\CecarChifferApi.csproj", "{220D8FE4-E3D4-58BA-E28D-EA97342C4C03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CecarChifferApi.Tests", "Tests\CecarChifferApi.Tests\CecarChifferApi.Tests.csproj", "{6F0F31F8-13B8-5E26-99A1-7B16383E3042}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{220D8FE4-E3D4-58BA-E28D-EA97342C4C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220D8FE4-E3D4-58BA-E28D-EA97342C4C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220D8FE4-E3D4-58BA-E28D-EA97342C4C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220D8FE4-E3D4-58BA-E28D-EA97342C4C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0F31F8-13B8-5E26-99A1-7B16383E3042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0F31F8-13B8-5E26-99A1-7B16383E3042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0F31F8-13B8-5E26-99A1-7B16383E3042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0F31F8-13B8-5E26-99A1-7B16383E3042}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F0F31F8-13B8-5E26-99A1-7B16383E3042} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B60B4ABA-CE6D-47BB-B775-CE1BB572B157}
+	EndGlobalSection
+EndGlobal

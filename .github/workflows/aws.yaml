@@ -17,7 +17,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with: 
-          dotnet-version: 'net8.0'  
+          dotnet-version: '8.0.'  
 
       - name: Build project  
         run: |
@@ -25,10 +25,17 @@ jobs:
           dotnet restore
           dotnet publish -c Release -o site
 
+      - name: Debug information
+        run: ls -R
+
       - name: Create ZIP package
         run: |
           cd CecarChifferApi/site  
           zip -r ../../site.zip *
+
+      - name: Verify ZIP
+        run: unzip -l site.zip
+          
 
       - name: Deploy to AWS Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v21

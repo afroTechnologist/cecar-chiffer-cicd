@@ -3,6 +3,11 @@ using CecarChifferApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.UseKestrel(options =>
+{
+    options.ListenAnyIP(5000); // Lyssna på port 5000
+});
+
 // Lägg till tjänster
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
